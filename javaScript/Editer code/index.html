@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STP Text Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="myscripts.js"></script>
+</head>
+
+<body>
+    <header style="font-family: sans-serif;">
+        <center>STP Text Editor Ver. 1.0.0</center>
+    </header>
+
+    <fieldset id="code_box">
+        <legend>TYPE YOUR CODE HERE</legend>
+        <textarea id="code">
+            <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+            </head>
+            <body>
+                
+            </body>
+            </html>
+        </textarea>
+    </fieldset>
+
+    <fieldset id="show">
+        <legend>YOUR CODE RESULT</legend>
+        <div id="result">
+            
+        </div>
+    </fieldset>
+
+    <center>
+        <button id="run_btn" onclick="run()">Run Code !</button>
+        <button id="icon" onclick="back()">Return to Code !</button>
+    </center>
+</body>
+
+</html>

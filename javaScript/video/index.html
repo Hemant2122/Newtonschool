@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>STP VIDEO PLAYER</h1>
+    </header>
+    <section>
+        <video src="SampleVideo_1280x720_1mb.mp4" width="100%" height="401" id="vid"></video>
+    </section>
+    <footer>
+        <button id="ubtn">
+            Upload Video
+            <input type="file" accept=".mp4" id="vupload" onchange="upload()">
+        </button>
+        <button onclick="vplay()" id="play">Play</button>
+        <button onclick="vpause()" id="pause">Pause</button>
+    </footer>
+    <script>
+        function vplay(){
+            var a = document.getElementById("vid");
+            a.play();
+        }
+
+        function vpause(){
+            var a = document.getElementById("vid");
+            a.pause();
+        }
+
+        function upload(){
+            var a = document.getElementById("vupload").value.replace(/.*(\/|\\)/,'');
+            var b = document.getElementById("vid");
+            b.src=a;
+        }
+    </script>
+</body>
+</html>

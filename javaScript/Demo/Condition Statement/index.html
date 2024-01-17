@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://datarecovery.com/wp-content/uploads/2015/08/Windows-10-background.jpg" width="100%" id="pic">
+    <button id="btn" onclick="stp()">Hide</button>
+
+    <script>
+        function stp(){
+            var picture = document.getElementById("pic");
+            var button = document.getElementById("btn");
+            var btn_txt = button.innerHTML;
+            picture.style.display = "none";
+            button.innerHTML = "Show";
+            if(btn_txt == "Show"){
+                picture.style.display = "block";
+                button.innerHTML = "Hide";
+            }else{
+
+            }
+        }
+    </script>
+</body>
+</html>

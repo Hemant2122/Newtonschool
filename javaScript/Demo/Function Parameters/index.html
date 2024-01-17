@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <input type="text" name="fname" id="first">
+        <input type="text" name="lname" id="sec">
+        <input type="submit" onclick="return a()">
+    </form>
+
+    <h1>The addition is </h1>
+    <p id="add"></p>
+    <h1>The subtraction is </h1>
+    <p id="sub"></p>
+    <h1>The multipliction is </h1>
+    <p id="mul"></p>
+    <h1>The division is </h1>
+    <p id="div"></p>
+
+    <script>
+        function a(){
+            var one = Number(document.getElementById("first").value);
+            var two = Number(document.getElementById("sec").value);
+            add(one, two);
+            sub(one, two);
+            mul(one, two);
+            div(one, two);
+            return false;
+        }
+
+        function add(x, y){
+            var result = document.getElementById("add");
+            result.innerHTML = x+y;
+        }
+
+        function sub(x, y){
+            var result = document.getElementById("sub");
+            result.innerHTML = x-y;
+        }
+
+        function mul(x, y){
+            var result = document.getElementById("mul");
+            result.innerHTML = x*y;
+        }
+
+        function div(x, y){
+            var result = document.getElementById("div");
+            result.innerHTML = x/y;
+        }
+
+    </script>
+</body>
+</html>

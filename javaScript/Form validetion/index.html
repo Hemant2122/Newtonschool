@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <form onsubmit="return login()">
+        Username<br>
+        <input type="text" name="usernmae" id="uname"><br><br>
+        Password<br>
+        <input type="password" name="password" id="upass" onclick="pass()" oninput="check()">
+        <span id="vpass"></span><i id="loader" class="fa fa-spinner fa-spin" aria-hidden="true" style="opacity: 0;"></i>
+        <i class="fa fa-check" aria-hidden="true" style="opacity: 0;" id="check"></i>
+        <br><br>
+        <input type="submit" value="Login">
+    </form>
+    <h1 id="result"></h1>
+
+
+    <script>
+        function login(){
+            var user = document.getElementById("uname").value;
+            var pass = document.getElementById("upass").value;
+            var check = user=="hemant" && pass==12345 ? "login success" : "login failed";
+            document.getElementById("result").innerHTML = check;
+            return false;
+        }
+
+        function pass(){
+            // var x = document.getElementById("upass").value;
+            // var z = x.length;
+        
+            var x = document.getElementById("vpass");
+            x.innerHTML =  "Enter minimum 10 digit password !";
+        }
+        function check(){
+            var x = document.getElementById("vpass");
+            x.style.display = "none";
+            
+            var y = document.getElementById("loader");
+            y.style.opacity = 1;
+
+            var z = document.getElementById("upass").value;
+            var len = z.length;
+
+            var chk = document.getElementById("check");
+            len > 9 ? chk.style.opacity = 1 : y.style.opacity = 1;
+            len > 9 ? y.style.opacity = 0  : chk.style.opacity = 0;
+        }
+    </script>
+</body>
+</html>

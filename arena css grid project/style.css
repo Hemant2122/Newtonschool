@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-content{
+    min-height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+}
+.left-section{
+    grid-column: span 1;
+    background-color: #2f5f79;7
+}
+.right-section{
+    grid-column: span 1 / span 2;
+    background-color: #fff;
+}
+.left-content{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile-image{
+    border: 5px solid #8a6409;
+    border-radius: 43px;
+    color: #fff;
+    width: 150px;
+    height: 130px;
+    
+}
+
+
+/* Write CSS code below */

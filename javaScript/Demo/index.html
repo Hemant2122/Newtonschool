@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Odd & Even Finder</h1>
+    <hr>
+    <form>
+        Enter Number. <br>
+        <input type="number" name="number" id="user"  oninput="stp()"><br><br>
+        <!-- <button onclick="return stp()">Check</button> -->
+    </form>
+    <p id="output"></p> 
+
+    <script>
+        function stp(){
+            var x = document.getElementById("user").value;
+            // if(x%2==0){
+            //     window.alert("Even");
+            // }else{
+            //     window.alert("Odd");
+            // }
+
+            var result = x%2==0 ? " is an Even Number" : " is an Odd Number";
+            document.getElementById("output").innerHTML = x+result;
+            return false;
+        }
+    </script>
+</body>
+</html>
