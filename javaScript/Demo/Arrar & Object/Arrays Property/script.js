@@ -466,11 +466,26 @@
 // console.log(a);
 
 
-var a = [];
-a.unshift(1);
-a.unshift(22);
-a.shift();
-a.unshift(3,[4,5]);
-a.shift();
-a.shift();
-a.shift();
+// var a = [];
+// a.unshift(1);
+// a.unshift(22);
+// a.shift();
+// a.unshift(3,[4,5]);
+// a.shift();
+// a.shift();
+// a.shift();
+
+
+// ----------------- Array Callback Functions ------------------
+
+// 1 -> ForEach :- 
+
+const arr = [5, 8, 99, 100, 240, 6, 93, 64];
+
+console.log(arr);
+
+function hemantWants(item){
+    console.log(item);
+}
+
+arr.forEach(hemantWants);
