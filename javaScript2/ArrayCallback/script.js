@@ -123,7 +123,7 @@
 
 // ------------------ REDUCTE TODO: Latter in pollyfills ---------------------
 
-let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 // way 1 ->
 
@@ -138,8 +138,114 @@ let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 //  way 2 -> 
 
-const answer = array.reduce( (previosValue, currentValue, index, array) => {
-    return previosValue + currentValue;
-});
+// const answer = array.reduce( (previosValue, currentValue, index, array) => {
+//     return previosValue + currentValue;
+// });
 
-console.log(answer, "reduce answer");
+// console.log(answer, "reduce answer");
+
+
+
+// -------------------------- concat ---------------------
+
+// const array1 = ["a", "b", "c"];
+// const array2 = ["d", "e", "f"];
+
+// const array3 = array1.concat(array2);
+
+// console.log(array3);
+
+
+// ------------------------ toString() Method ----------------------
+
+
+// const obj = {
+//     name : "hemant",
+//     class : 9,
+// }
+
+// const answer = obj.toString();
+// console.log(answer);
+// console.log(JSON.stringify(obj));
+
+// let arr = [1, 2, 3, 4, 5];
+
+// console.log(arr.toString());
+
+// console.log(JSON.stringify(arr));
+
+
+
+// ------------------------ String ---------------------------
+
+// const string1 = "hello world";
+// console.log(string1);
+
+// console.log(`hello
+// world;
+// `);
+
+// console.log("hello \n world", "------> escape char debug");
+
+
+// ---------- operation on string ---------------------
+
+
+// const str = "hello";
+// console.log(str.charAt(0));
+// console.log(str[0]);
+
+// --------------------- Substring -----------------------
+
+// const str = "aeroplanes";
+// console.log(str.substring(0, 3));
+// console.log(str.substring(0, 4));
+
+// console.log(str.substring(4));
+
+
+// -------------------------- toUpperCase and toLowerCase ---------------------
+
+
+// const str = "cricket";
+// console.log(str.toUpperCase()); // CRICKET
+
+// console.log(str.toLowerCase()); // cricket
+
+// const country = "india";
+// const char1 = country.charAt(0).toUpperCase(); // "I"
+// const  restOfTheString = country.substring(1); // ndia
+
+// console.log(char1 + restOfTheString);
+
+
+// ------------------------------ TRIM (Space deleted to left and right side) -----------------------------
+
+
+// const name = "             Hemant kumar              ";
+// console.log(name);// "             Hemant kumar              "
+
+// console.log(name.trim()); // "Hemant kumar"
+
+
+
+// --------------------------- Searching -------------------------------
+
+// const sentence = "hey there hello world";
+// console.log(sentence.includes("helllosssss")); // false
+// console.log(sentence.includes("hello")); // true
+
+
+// ------------------------ Comparision ------------------------------
+
+
+// console.log(1 > 80); // false
+// console.log("a" > "z"); // true
+
+
+// const str1 = "hello";
+// const str2 = "hello";
+
+// console.log(str1.localeCompare(str2));
+// console.log("Zebra".localeCompare("asd"));
+// console.log("Zebra".localeCompare("Zzzzzz"));
