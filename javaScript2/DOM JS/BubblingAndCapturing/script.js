@@ -55,4 +55,3 @@ const childElement = document.getElementById("child");
 //  Answer : ---------
 
 // grandParent hello !!!....... ,  child hello !!!... , parent hello !!!......
-
