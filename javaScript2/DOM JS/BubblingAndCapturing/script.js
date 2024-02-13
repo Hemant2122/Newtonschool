@@ -39,19 +39,20 @@ const childElement = document.getElementById("child");
 
 // Question:----
 
-childElement.addEventListener("click", () => {
-    console.log("child hello !!!...");
-}, false);
+// childElement.addEventListener("click", () => {
+//     console.log("child hello !!!...");
+// }, false);
 
-grandParentElement.addEventListener("click", () => {
-    console.log("grandParent hello !!!.......");
-}, true);
+// grandParentElement.addEventListener("click", () => {
+//     console.log("grandParent hello !!!.......");
+// }, true);
 
-parentElement.addEventListener("click", () => {
-    console.log("parent hello !!!......");
-}, false);
+// parentElement.addEventListener("click", () => {
+//     console.log("parent hello !!!......");
+// }, false);
 
 
 //  Answer : ---------
 
 // grandParent hello !!!....... ,  child hello !!!... , parent hello !!!......
+
