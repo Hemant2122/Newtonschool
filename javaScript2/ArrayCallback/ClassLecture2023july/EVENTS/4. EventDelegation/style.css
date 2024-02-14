@@ -1,0 +1,17 @@
+.container{
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.colorElement{
+    height: 40px;
+    width: 90px;
+    border: 1px solid black;
+}
+
+.palletContainer{
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+}
