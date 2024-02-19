@@ -9,10 +9,13 @@ function func2() {
 
 const checkBoxElement = document.getElementById("check");
 
-checkBoxElement.addEventListener("click", (eventObj) => {
+checkBoxElement.addEventListener("check", (eventObj) => {
     const div1Element = document.getElementById("div1");
-    div1Element.append = eventObj.stopPropagation;
+    div1Element.addEventListener("click", () => {
+        function func1(event) {
+            console.log("DIV 1 is clicked.");
+            event.stopPropagation();
+        }
+    });
     
 });
-
-
