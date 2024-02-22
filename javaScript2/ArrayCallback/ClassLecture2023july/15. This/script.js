@@ -63,4 +63,4 @@ obj.func();// hello guys my name is utkarsh
 console.log("--------------x-x-x-x-x-x-x---------------");
 
 const funcCopy = obj.func;
-funcCopy();// hello guys my name is
+funcCopy();//
