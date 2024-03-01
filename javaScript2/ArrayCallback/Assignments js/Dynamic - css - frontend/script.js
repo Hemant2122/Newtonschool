@@ -24,16 +24,28 @@ rangeElement.addEventListener("input", (event) => {
 const underlineBtnElement = document.getElementById("underline");
 underlineBtnElement.addEventListener("click", () => {
     textContainerElement.style.textDecoration = "underline";
+
+    underlineBtnElement.addEventListener("click", () => {
+        textContainerElement.style.textDecoration = "none";
+    });
 });
 
 const italicBtnElement = document.getElementById("italic");
 italicBtnElement.addEventListener("click", () => {
     textContainerElement.style.fontStyle = "italic";
+
+    italicBtnElement.addEventListener("click", () => {
+        textContainerElement.style.fontStyle = "normal";
+    });
 });
 
 const boldBtnElement = document.getElementById("bold");
 boldBtnElement.addEventListener("click", () => {
     textContainerElement.style.fontWeight = "bold";
+
+    boldBtnElement.addEventListener("click", () => {
+        textContainerElement.style.fontWeight = "normal";
+    });
 });
 
 // Font Family Selection:---
