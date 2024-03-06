@@ -14,23 +14,27 @@ function fun(){
     // ------------- Complete button ---------------
     const newbtnCompleted = document.createElement("button");
     newbtnCompleted.setAttribute("class", "complete-btn")
-    newbtnCompleted.textContent = "Completed";
+    newbtnCompleted.innerHTML = "Completed";
+    newbtnCompleted.setAttribute("onclick", "complete()")
     ulElement.append(newbtnCompleted);
+    
     
     // ------------- Delete button ---------------
     const newbtnDelete = document.createElement("button");
     newbtnDelete.setAttribute("class", "trash-btn");
-    newbtnDelete.textContent = "Delete";
+    newbtnDelete.innerHTML = "Delete";
+    newbtnDelete.setAttribute("onclick", "deletBtn()")
     ulElement.append(newbtnDelete);
 
-
-    const completeElement = document.querySelector("complete-btn");
-    completeElement.onclick = function(){
-
-        return false;
-    }
-  
-
-
     return false;
+}
+document.getElementById("complete-btn")
+function complete(){
+    const inputValue = inputElement.value;
+    inputValue.style.textDecoration = "line-through";
+
+}
+
+function deletBtn(event){
+    event.target.parentElement.remove() 
 }
