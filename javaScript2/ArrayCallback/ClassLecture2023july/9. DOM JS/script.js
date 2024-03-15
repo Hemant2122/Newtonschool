@@ -29,10 +29,19 @@
 // Question ---------
 
 
-const ulElement = document.getElementById("name");
+// const ulElement = document.getElementById("name");
 // const newIteamList = document.createElement("li");
 // newIteamList.textContent = "hemant";
 // ulElement.append(newIteamList);
 
 
-ulElement.innerHTML += `<li>hemant</li>`;
+// ulElement.innerHTML += `<li>hemant</li>`;
+
+const utkarshMarksElement = document.getElementById("utkarshMarksHeading");
+
+console.dir(utkarshMarksElement);
+
+const marks = utkarshMarksElement.dataset.utkarshMarks;
+const abaraKatabara = utkarshMarksElement.dataset.abaraKatabara;
+
+console.log(marks, abaraKatabara);
