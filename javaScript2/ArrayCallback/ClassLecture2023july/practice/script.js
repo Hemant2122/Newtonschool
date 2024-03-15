@@ -136,6 +136,71 @@
 
 // ----------- Another way to Insert Element insertAdjacentHTML ---------------
 
-const nameListElement = document.getElementById("names");
+// const nameListElement = document.getElementById("names");
 
-names.insertionHTML('beforebegin', '<li>Hemant</li>');
+// names.insertionHTML('beforebegin', '<li>Hemant</li>');
+
+// var a = 10;
+// console.log(a);
+
+// function abc(){
+//     console.log(a);
+//     var a = 99;
+//     console.log(a);
+// }
+
+// abc();
+
+// console.log(a);
+
+// if(true){
+//     let a = 12;
+//     console.log(a);
+
+//     function abc(){
+//         let a = 99;
+//         console.log(a);
+//     }
+
+//     abc();
+
+//     console.log(a);
+// }
+
+// if(true){
+//     const a = 12;
+//     console.log(a);
+
+//     function abc(){
+//         const a = 99;
+//         console.log(a);
+//     }
+
+//     abc();
+
+//     console.log(a);
+// }
+
+
+
+// let a = 12;
+// console.log(a);
+
+// if(true){
+//     let a = 99;
+//     console.log(a);
+// }
+
+// console.log(a);
+
+/*
+const utkarshMarksElement = document.getElementById("utkarshMarksHeading");
+
+console.dir(utkarshMarksElement);
+
+const marks = utkarshMarksElement.dataset.utkarshMarks;
+const abaraKatabara = utkarshMarksElement.dataset.abaraKatabara;
+
+console.log(marks, abaraKatabara);
+*/
+
