@@ -16,7 +16,7 @@ function fun(){
     newbtnCompleted.setAttribute("class", "complete-btn")
     newbtnCompleted.innerHTML = "Completed";
     newbtnCompleted.setAttribute("onclick", "complete()")
-    ulElement.append(newbtnCompleted);
+    createLIElement.append(newbtnCompleted);
     
     
     // ------------- Delete button ---------------
@@ -24,17 +24,23 @@ function fun(){
     newbtnDelete.setAttribute("class", "trash-btn");
     newbtnDelete.innerHTML = "Delete";
     newbtnDelete.setAttribute("onclick", "deletBtn()")
-    ulElement.append(newbtnDelete);
+    createLIElement.append(newbtnDelete);
 
     return false;
 }
-document.getElementById("complete-btn")
-function complete(){
-    const inputValue = inputElement.value;
-    inputValue.style.textDecoration = "line-through";
+
+function complete(event){
+    const element = event;
+    const line_through = document.querySelector("li");
+    line_through.style.textDecoration = "line-through";
 
 }
 
 function deletBtn(event){
-    event.target.parentElement.remove() 
+    const line_through = document.querySelector("li");
+    const buttonEleme = document.querySelector(".trash-btn");
+    const buttonEleme1 = document.querySelector(".complete-btn");
+    buttonEleme1.remove();
+    buttonEleme.remove();
+    line_through.remove();
 }

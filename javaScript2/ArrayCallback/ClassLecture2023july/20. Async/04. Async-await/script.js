@@ -1,27 +1,27 @@
 
 // -------------- ASYNC AWAIT (Syntatical sugar for promises) -------------
-const url = "https://api.kanye.rest";
-// fetch(url) //5 sec
-// .then((res) => { // after 5 second I am getting the response 
+const url = "https://content.newtonschool.co/v1/pr/63b70222af4f30335b4b3b9a/buses";
+fetch(url) //5 sec
+.then((res) => { // after 5 second I am getting the response 
 
-//     return res.json();
+    return res.json();
 
-// })
-// .then((data) => {
-//     console.log(data);
+})
+.then((data) => {
+    console.log(data);
 
-//     const {quote} = data;
-//     // const quote = data.quote
-//     console.log("quote", quote);
-//     return quote;
-// })
-// .then((data) => {
-//     const divElement = document.getElementById("kanye");
-//     divElement.innerHTML = data;
-// })
-// .catch((error) => {
+    const {Array} = data;
+    // const quote = data.quote
+    console.log("quote", Array);
+    return Array;
+})
+.then((data) => {
+    const divElement = document.getElementById("kanye");
+    divElement.innerHTML = data;
+})
+.catch((error) => {
 
-// }) 
+}) 
 
 
 // --------------- async await ------------------
@@ -60,37 +60,37 @@ const url = "https://api.kanye.rest";
 
 // 1. NEW PROMISE ;-----
 
-function abc() {
-    const abc1 = new Promise((res, rej) => {
-        res(190001900011);
-    });
-    return abc1;
-}
-console.log(abc());
+// function abc() {
+//     const abc1 = new Promise((res, rej) => {
+//         res(190001900011);
+//     });
+//     return abc1;
+// }
+// console.log(abc());
 
 
-// 2. async
+// // 2. async
 
-async function abc(){
-    return(190001900011);
-}
+// async function abc(){
+//     return(190001900011);
+// }
 
-console.log(abc());
+// console.log(abc());
 
 
 // -------------- How to Consume A Promise ----------------
 
 // 01. .then  .catch 
 
-abc().then((data) => {
-    console.log(".then consumotion ", data);
-})
+// abc().then((data) => {
+//     console.log(".then consumotion ", data);
+// })
 
 // 02. async - await 
 
-async function consumeABC(){
-    const data = await abc();
-    console.log(data, "async wait consumption");
-}
+// async function consumeABC(){
+//     const data = await abc();
+//     console.log(data, "async wait consumption");
+// }
 
-consumeABC();
+// consumeABC();
